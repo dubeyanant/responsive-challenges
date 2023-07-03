@@ -1,0 +1,57 @@
+@use "../globals/var" as v;
+
+.footer--wrap {
+  background-color: v.$light-black;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  max-width: 1200px;
+  padding: min(10vw, 4em) min(10vw, 4em);
+
+  color: white;
+  font-size: min(5vw, 1rem);
+
+  &__info {
+    @media (min-width: 700px) {
+      display: flex;
+      gap: 2em;
+
+      div {
+        flex: 1;
+      }
+
+      :nth-child(1) {
+        flex: 3;
+      }
+    }
+  }
+
+  h2 {
+    font-size: min(10vw, 3rem);
+    font-family: v.$oswald;
+
+    text-align: center;
+
+    margin-bottom: 1.2em;
+  }
+
+  h3 {
+    color: v.$beige;
+    font-size: min(7vw, 1.5rem);
+
+    font-family: v.$oswald;
+
+    margin: 1em 0 1em;
+  }
+
+  li {
+    list-style: none;
+    margin-block: 1em;
+  }
+
+  a {
+    color: inherit;
+  }
+}
