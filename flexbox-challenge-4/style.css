@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --skin-color: #f3eed9;
+  --brown-color: #824936;
+  --black-color: #222c2a;
+
+  --playfair-font: "Playfair Display", serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3125rem;
+  color: var(--black-color);
+}
+
+h2 {
+  font-family: var(--playfair-font);
+  font-size: 2.25rem;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.width-limit {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.width-47 {
+  width: 47%;
+}
+
+.hero {
+  min-height: 660px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  margin: 0 auto;
+  padding-inline: 10rem;
+}
+
+.hero-wrapper {
+  background: var(--skin-color);
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.5rem;
+}
+
+.hero h1 {
+  margin-top: 1rem;
+
+  font-size: 3.75rem;
+  font-family: var(--playfair-font);
+  color: var(--brown-color);
+}
+
+.first {
+  margin: 5rem auto 8rem;
+}
+
+.first h2 {
+  color: var(--brown-color);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.first__col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second--wrapper {
+  background-color: var(--black-color);
+}
+
+.third--wrapper {
+  background-color: var(--brown-color);
+}
+
+.second,
+.third {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0;
+}
+
+.second h2,
+.third h2 {
+  color: var(--skin-color);
+  margin-bottom: 1em;
+}
+
+.second p,
+.third p {
+  color: white;
+}
