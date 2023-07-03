@@ -1,0 +1,29 @@
+@use "../globals/var" as v;
+
+.info--wrap {
+  background-color: hsl(40, 20%, 56%, 0.15);
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  gap: 2.5em;
+  max-width: 1200px;
+  padding: min(10vw, 6em) min(10vw, 5em);
+  text-align: center;
+  color: v.$light-black;
+  font-size: min(5vw, 1rem);
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-family: v.$oswald;
+    font-size: min(10vw, 2rem);
+    color: v.$beige;
+
+    margin-bottom: 0.75em;
+  }
+}
