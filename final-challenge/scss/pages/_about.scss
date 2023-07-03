@@ -1,0 +1,65 @@
+@use "../globals/var" as v;
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: min(10vw, 4em) min(10vw, 5em);
+
+  color: v.$light-black;
+
+  font-size: min(5vw, 1.3rem);
+
+  &__left {
+    h2 {
+      font-family: v.$oswald;
+      color: v.$beige;
+      font-size: min(10vw, 2.25rem);
+      margin-bottom: 1em;
+    }
+
+    img {
+      margin-block: 2em;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 700px) {
+      flex-direction: row;
+    }
+    gap: 2.5em;
+
+    font-size: min(5vw, 0.9rem);
+
+    margin-top: 2.5em;
+
+    color: white;
+    text-align: center;
+
+    &__container {
+      background-color: v.$light-black;
+      padding: min(5vw, 1.25em);
+
+      h2 {
+        font-family: v.$oswald;
+        font-size: min(8vw, 1.65rem);
+        @media (min-width: 700px) {
+          font-size: min(3vw, 1.65rem);
+        }
+
+        margin-bottom: 0.75em;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    display: flex;
+    gap: min(6vw, 6.5em);
+
+    &__right {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  }
+}
